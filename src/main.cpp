@@ -9,13 +9,18 @@
 #include <string>
 #include <algorithm>
 #include <functional>
+#include <stdint.h>
 
 using namespace std;
 
 const int maxn = 1e5 + 7;
 const int maxm = 1e5 + 7;
-int dp[maxn][maxm];
 int n, m;
+int dp[maxn][maxm];
+int inputs[maxn];
+vector<vector<int>> adj;
+vector<vector<int>> radj;
+int val[maxn];
 
 void solution()
 {
